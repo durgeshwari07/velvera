@@ -1,0 +1,2182 @@
+  <!--DOCTYPE html-->
+  <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--==title======================-->
+        <title>Beauty Website HTML</title>
+        <!--==CSS========================-->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!--==fav-icon===================-->
+        <link rel="shortcut icon" href="images/fav-icon.png"/>
+        <!--==import-poppins-font========-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!--==Font-Awesome-for-icons=====-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </head>    
+    
+    </head>
+    <body>
+        <style>
+            *{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*==nav================*/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+}
+.logo{
+    font-size: 1.8rem;
+    color: #333333;
+    font-weight: 800;
+    text-transform: uppercase;
+    height: 70px;
+}
+.logo img{
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.search-box{
+    width: 280px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    padding: 0px 20px;
+    margin-left: auto;
+}
+.search-box input{
+    width: 95%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.search-box button{
+    color: #333333;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.nav-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-btns a{
+    width:35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fed2d1;
+    color: #383838;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+.nav-btns a i{
+    margin-top: 2px;
+}
+/*==main===========================*/
+#main{
+    max-width: 1200px;
+    width: 90%;
+    background-color: #ffedf6;
+    padding: 50px;
+    border-radius: 30px;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    align-items: center;
+}
+.main-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-text span{
+    color: #ec26b1;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.main-text h1{
+    font-size: 2.4rem;
+    color: #333333;
+    font-weight: 800;
+}
+.main-text h1 font{
+    background-color: #fed2d1;
+    padding: 0px 5px;
+}
+.main-text p{
+    color: #5a5a5a;
+    margin: 10px 0px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+ /* -webkit-line-clamp: 2; */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.main-text a{
+    font-weight: 800;
+    color: #333333;
+    border-bottom: 1px solid #646464;
+    margin-top: 30px;
+}
+.main-img img{
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    object-position: center;
+}
+/*==grid-product-3=================*/
+.product-grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    max-width: 1200px;
+    width: 90%;
+    margin: 15px auto;
+}
+.product-grid-box{
+    position: relative;
+    height: 210px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+.product-grid-box img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center right;
+}
+.product-grid-text{
+    position: absolute;
+    left: 14%;
+    top: 50%;
+    transform: translate(-14%,-50%);
+    max-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.product-grid-text strong{
+    color: #1d1d1d;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+.product-grid-text span{
+    color: #5a5a5a;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.product-grid-text a{
+    font-weight: 600;
+    color: #272727;
+    margin-top: 10px;
+}
+.product-grid-box1{
+    background-color: #dffbe2;
+}
+.product-grid-box2{
+    background-color: #fbeae3;
+}
+.product-grid-box3{
+    background-color: #faf4e4;
+}
+/*==grid-2===================*/
+.product-grid-2{
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+/*==grid-half=================*/
+.product-grid-half{
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    max-height: 300px;
+}
+.product-grid-half .product-grid-box1,
+.product-grid-half .product-grid-box2,
+.product-grid-half .product-grid-box3{
+    height: 100%;
+} 
+.product-grid-half .product-grid-box2{
+    grid-row: 1/3;
+}
+.product-grid-half .product-grid-box2 .product-grid-text{
+    max-width: 220px;
+}
+.product-grid-half .product-grid-box2 .product-grid-text strong{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+/*==new_products===================*/
+#new_products{
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+}
+.new-p-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #fafafa;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.new-p-heading h3{
+    font-size: 1.8rem;
+    color: #1d1d1d;
+    font-weight: 800;
+}
+.new-p-heading ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+.new-p-heading li{
+    padding: 2px 20px;
+    border-radius: 4px;
+    margin: 0px 3px;
+    color: #333333;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.new-p-heading li.active{
+    background-color: #f4ad43;
+}
+.new-product-box{
+    max-width: 100%;/*250px*/
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+}
+.new-product-box:hover{
+    box-shadow: 2px 2px 30px rgba(148, 24, 96, 0.05);
+}
+.new-product-img{
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+.new-product-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.new-product-img span{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #fed2d1;
+    color: #333333;
+    padding: 3px 10px;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+.new-product-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    padding: 5px 20px;
+}
+.new-product-text .new-product-title{
+    color: #1d1d1d;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.new-product-text span{
+    color: #8b3d74;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.new-p-cart-btn{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    background-color: #0f0f0f;
+    margin-top: 10px;
+    display: none;
+}
+.new-product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+/*==popular-product=====================*/
+#popular-product{
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+}
+.popular-heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.popular-heading h3{
+    font-size: 1.8rem;
+    color: #1d1d1d;
+    font-weight: 800;
+}
+.popular-heading a{
+    color: #5a5a5a;
+    font-size: 0.9rem;
+}
+.popular-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: 30px;
+}
+.popular-box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.popular-box-img{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    background-color: #fff8f8;
+    border-radius: 6px;
+}
+.popular-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.popular-box-text{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    margin-left: 10px;
+    width: 100%;
+}
+.popular-box-text a{
+    color: #363636;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.popular-box-text .p-category{
+    color: #8b3d74;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.popular-box-text .p-price{
+    color: #1d1d1d;
+    font-size: 1.4rem;
+    font-size: 700;
+    margin-top: auto;
+}
+.popular-box-text .p-price del{
+    font-size: 1rem;
+    color: #8b3d74
+}
+/*==partner-logo=================================*/
+#partner{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+}
+.partner-heading h3{
+    font-size: 1.56rem;
+    font-weight: 700;
+    color: #202020;
+    letter-spacing: 0.5px;
+}
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    grid-gap: 15px;
+}
+.logo-container img{
+    height: 50px;
+    object-fit: contain;
+    object-position: center;
+    filter: grayscale(1);
+    opacity: 0.3;
+    transition: all ease 0.3s;
+}
+.logo-container img:hover{
+    filter: grayscale(0);
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+/*==footer================================*/
+footer{
+    width: 100%;
+    border-top: 1px solid #e9e9e9;
+}
+.footer-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 50px 0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-company-box,
+.footer-subscribe{
+    max-width: 330px;
+}
+.footer-company-box .footer-logo{
+    color: #333333;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.footer-company-box p,
+.footer-subscribe p{
+    color: #585858;
+    margin: 5px 0px;
+    line-height: 1.6rem;
+    font-size: 0.9rem;
+}
+.footer-social{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-social a{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e9e9e9;
+    color: #333333;
+    font-size: 0.9rem;
+}
+.footer-link-box strong,
+.footer-subscribe strong{
+    font-size: 1.2rem;
+    color: #333333;
+    font-weight: 600;
+}
+.footer-link-box ul{
+    margin-top: 5px;
+}
+.footer-container ul li a{
+    color: #797979;
+    display: flex;
+    margin-bottom: 5px;
+    transition: all ease 0.3s;
+    font-weight: 500;
+}
+.footer-container ul li a:hover{
+    color: #0f0f0f;
+}
+.subscribe-box{
+    width: 100%;
+    border: 1px solid #dadada;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-top: 10px;
+}
+.subscribe-box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0px 15px;
+}
+.subscribe-box button{
+    border: none;
+    outline:none;
+    background-color: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    height: 40px;
+    padding: 0px 20px;
+    cursor: pointer;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+    border-top: 1px solid #e9e9e9;
+    padding: 20px 0px;
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+.footer-bottom span{
+    color: #252525;
+    font-size: 0.9rem;
+}
+
+/*==making-responsive==============================*/
+@media(max-width:1200px){
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+}
+@media(max-width:1100px){
+    .product-grid-3{
+        grid-template-columns: 1fr 1fr;
+    }
+    .new-product-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media(max-width:1000px){
+    .product-grid-half{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 200px;
+        max-height: 100%;
+    }
+    .product-grid-half .product-grid-box2{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        height: 300px;
+    }
+}
+@media(max-width:900px){
+    #main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main-text{
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    .popular-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .logo-container{
+        margin-top: 20px;
+        justify-content:flex-start;}
+    .logo-container img{
+    height: 40px;}
+}
+@media(max-width:760px){
+    .navigation{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .search-box{
+        grid-row: 2/3;
+        grid-column: 1/3;
+        width: 100%;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    .nav-btns{
+        margin-left: auto;
+    }
+    .logo{
+        height: 40px;
+    }
+    #main{
+        padding: 20px;
+    }
+    .main-text h1{
+        font-size: 1.8rem;
+    }
+    .new-p-heading h3,
+    .popular-heading h3,
+    .partner-heading h3 {
+        font-size: 1.2rem;
+    }
+    .product-grid-3{
+        grid-template-columns: 1fr;
+    }
+    .new-product-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .product-grid-half{
+        grid-template-columns: 1fr;
+        grid-template-rows:auto;
+        grid-auto-rows: auto;
+    }
+    .product-grid-half .product-grid-box2{
+        grid-column: 1/2;
+        height: auto;
+    }
+    .product-grid-half .product-grid-box2 .product-grid-text strong{
+        font-size: 1.2rem;
+    }
+    .product-grid-2{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:620px){
+    .new-p-heading{
+        flex-direction: column;
+    }
+    .new-p-heading ul{
+        margin-top: 10px;
+    }
+    .new-product-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .popular-container{
+        grid-template-columns: 1fr;
+    }
+    .product-grid-box{
+        padding: 20px 20px 0px 20px;
+    }
+    .product-grid-box img{
+        height: 90%;
+        width: 70%;
+        object-position: bottom right;
+        margin-top: auto;
+        object-fit: contain;
+    }
+    .product-grid-half .product-grid-box2 .product-grid-text strong{
+        max-width: 120px;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:320px){
+    .new-product-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*==product-page========================*/
+#product_details{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    max-width: 1000px;
+    width: 90%;
+    margin: 30px auto 50px auto;
+}
+.d-product-img{
+    border: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d-product-img img{
+    width: 100%;
+    max-height: 350px;
+    height: 90%;
+    object-fit: contain;
+    object-position: center;
+}
+.d-product-text{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    justify-content: flex-start;
+}
+.d-product-text .category{
+    color: #ec26b1;
+    font-size: 0.9rem;
+}
+.d-product-text strong{
+    color: #1b1b1d;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+.d-product-text .rating{
+    color: #f3a006;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+.d-product-text .rating span{
+    color: #161616;
+    margin-left: 2px;
+    font-weight: 500;
+}
+.d-product-text p{
+    color: #4d4d4d;
+    margin: 10px 0px;
+    font-size: 0.9rem;
+}
+.d-product-text .price{
+    color: #181818;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.d-product-text .price del{
+    color: #f80f0f;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.d-product-text .quantity{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+}
+.d-product-text .quantity span{
+    color: #363636;
+    margin-right: 10px;
+    font-weight: 500;
+}
+.d-product-text .quantity input{
+    width: 70px;
+    height: 40px;
+    background-color: #f3f3f3;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+}
+.d-product-text a{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #161616;
+    margin-top: 20px;
+}
+.relative-products .product-heading{
+    background-color: #f5f5f5;
+    border: 1px solid rgb(236,236,236);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+/*==making-product-page-responsive============*/
+@media(max-width:820px){
+    #product_details{
+        grid-template-columns: 1fr;
+    }
+    .d-product-img{
+        max-height: 400px;
+    }
+    .d-product-text{
+        padding: 0px;
+        margin-top: 30px;
+    }
+}
+@media(max-width:724px){
+    .d-product-text strong{
+        font-size: 1.4rem;
+    }
+}
+
+
+.navbar {
+            background: none !important;
+        }
+        .navbar-nav {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            gap: 50px;
+        }
+        .nav-item a {
+            color: black !important;
+            font-size: 18px;
+            
+        }
+        .content {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        #home {
+            display: block;
+        }
+        .modal-content {
+        color: white;
+    }
+    .form-control {
+        border: 1px solid white;
+        color: white;
+    }
+    .form-control::placeholder {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: url('https://i.pinimg.com/736x/b7/ba/49/b7ba49546b5c79d330b1109e04aa1b52.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80%;
+            /* background: rgba(0, 0, 0, 0.6); */
+        }
+        .hero h1, .hero p {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 48px;
+            color: #f8c24f;
+        }
+        .about-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .highlight {
+            color: #f8c24f;
+        }
+        .stats-box {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+
+        .content { display: none; }
+        .product-box {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            background: #fff;
+        }
+        .product-box img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    
+
+        .cart-container, .checkout-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-header, .cart-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+        }
+
+        .cart-header {
+            background: #f8f8f8;
+            font-size: 18px;
+        }
+
+        .cart-item {
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        .cart-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .cart-header span, .cart-item div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .btn-danger {
+            background: red;
+            color: white;
+        }
+
+        #cart-total {
+            text-align: right;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .btn-success {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            font-size: 18px;
+            background: green;
+            color: white;
+        }
+
+        .checkout-header {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .checkout-summary div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .checkout-form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .checkout-form input, .checkout-form select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .place-order-btn {
+            width: 100%;
+            background: #28a745;
+            color: #fff;
+            font-size: 18px;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #card-details {
+            display: none;
+        }
+   
+        </style>
+    
+        <!--==navigation=======================-->
+        <nav class="navigation">
+    
+            <!--**logo*****************-->
+            <a href="index.html" class="logo">
+                <img alt="" src="https://media-hosting.imagekit.io//a350917e001a45d2/Pastel_Green_Minimalist_Beauty_Skincare_Brand_Logo__1_-removebg-preview.png?Expires=1837090675&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=VHvWL2cpSf3zGmrQSZiZV27nqujBqz~OXo75lh7fR4NgyRrwXh5cP~Ur5SQZ~gHeHq-iXGhFSKPTu~UYFaAreWEL7HHIocKyL3gqoCkULoxz32gFSXGCzvDOTfFE-H7ee~IofI1Rx468WN~qYX41Pagm8SBDJKusvV-MVV~C6ZtxmqIOQ6jYZwADFpMCwsfmcDKn6rH9oDDTLN2FkA2c4-NS~dPd8oFjrxB9xJBwy9lIQK4uSgakAfB~mMZNnL7Mc1lhI22TjuV0CVjs-3UptW6Qt5P9fCVz-92hKGUW2vFCDBKTQnMUhseehGF5YbHa9zAwP5IAMzdEZfrV4mgEUw__">
+            </a>
+
+            <div class="navbar navbar-expand-lg">
+                <div class="container d-flex justify-content-center">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html" onclick="showPage()">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"  onclick="showPage('about')">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"  onclick="showPage('product1')">Skin</a></li>
+                                    <li><a class="dropdown-item" href="#"  onclick="showPage('product2')">Nail</a></li>
+                                    <li><a class="dropdown-item" href="#"  onclick="showPage('product3')">Body</a></li>
+                                    <li><a class="dropdown-item" href="#"  onclick="showPage('product4')">Hair</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--**search***************-->
+            <form class="search-box">
+                <input type="text" placeholder="Search Product's Here" required/>
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+            <!--**btns*****************-->
+            <div class="nav-btns">
+                <a href="#" class="nav-user" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    <i class="fa-regular fa-user" ></i>
+                </a>
+                <a href="#" class="nav-cart" onclick="toggleCart(event)">
+                    <i class="fa-solid fa-cart-shopping">
+                    <span id="cart-icon">0</span></i>
+                </a>
+            </div>
+    
+        </nav>
+    
+        <div id="home" class="container mt-4">
+
+        <!--==main==========================-->
+        <section id="main">
+            
+            <!--**text*****************-->
+            <div class="main-text">
+                <span>New Collection</span>
+                <h1>Elevate <font>Your Skincare Routine</font> with Our Premium Organic Beauty Range!.</h1>
+                <p>Discover the essence of natural beauty with our New Organic Skincare Collection! Infused with 100% natural ingredients, our premium beauty products are designed to hydrate, nourish, and rejuvenate your skin. Perfect for all skin types, they bring a touch of luxury and nature to your daily skincare routine..</p>
+                <a href="#"> Launching Soon!</a>
+            </div>
+            <!--**img******************-->
+            <div class="main-img">
+                <img alt="Main Img" src="https://media-hosting.imagekit.io//7c93a42ad60a4667/_Pngtree_mock_up_cosmetic_products_for_15619191-removebg-preview.png?Expires=1837085913&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=w640Rng3i~wXs77BklmhPzmWQiKqk~sW6ftLRMcIJoQJt0y6tbqMcr0l8dCyo6TRTh~ZGEMh7h3q99A9ckEVb1zbj10L7-hXliuJ~uxgT8pIngP2t5fyAA7QEz3n2KL59327-keKSFY57ZP2eG9NvsKRxd13WbuOJaQQJe0AuJWcG6EAimTAaqVZDdnUijhknGM3nAMDLKIzZggREHAptZOWgsIu2NAqY2MASw1qZvsfesHIleSR9kvJdTserRTopV-goUWRru-ZZhcTuJwOLWnZWNht4FMTQWCmDovt1mtefpoKtt73-TVUPZ-wHykYLfmzDHxtMb7ihvAVVaLiyw__">
+            </div>
+    
+        </section>
+    
+    
+        <!--==product-grid-3=======================-->
+        <section class="product-grid-3">
+    
+            <!--**box*************-->
+            <div class="product-grid-box product-grid-box1">
+                <!--img-->
+                <img src="https://media-hosting.imagekit.io//e6c9b408ca2a4cba/s1.jpg?Expires=1837342549&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=OKbqEdcuBa5mLNB6h5KZN0decGuHmH89xnTynhef-mZN5EI-ciRHlt8hWM-HKFjzMImDyHhJITjyJvgzq9udFLyCX7HCIt5OwfgoshxSRXaiyjDlmAevCw3D7kr4Pc8fDhUV-MStR~kUl5RChutKUpRzTLy36Hko2Kjju6K4OUoXR0PD6DKmhRuSIIULmRteGNlWN0hUqINYZMNXfuDo3eK3dszopjQ~fPe9CMr1NkYgJTK80m8PPAfceqiHYgU9HM5dW3tnCZE54ls97px9MItOKbzyXlxo2apsyiw4F4bw68TpIFBzkVQ9X9xKXWralzFRlXE1x-Qo7rT7gcrIMA__" />
+                <!--text-->
+                <div class="product-grid-text">
+                    <strong>Natural Green Lotion</strong>
+                    <span>Skin Care Product</span>
+                    <a  class="dropdown-item" href="#"  onclick="showPage('product4')">Shop Now</a>
+                </div>
+            </div>
+    
+            <!--**box*************-->
+            <div class="product-grid-box product-grid-box2">
+                <!--img-->
+                <img src="https://media-hosting.imagekit.io//ca036ce63ba74b96/s2.jpg?Expires=1837342549&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=nRSH4~glnyBlMWx2DN6VXQGPzoTtD29tppIh2PbhGEqIJbzQXpn5xgOP-6TzjUfMRhkL~WIRJ~mKyH3RRjPES-PARKKRcZxXSJwJ70i5zSBCs7dpRCQVjSmrA~RbB1ZTAhq56eIPt3jFtqT~WygmuJ5K2I~HYqxaT83iLdqLsBNFxx~K8VaZdnFDfFgkU494ZPrN4T4kiqFMok7WnQGGfgUXsGaAFa3D8cigTFpY1t2SQtn7GP4ZVivw1mMFBHqubnuMz1evg4cskizKz4x678n6odAXoSaKf9tqP7pZ5aHNx~b7YotHy2u3PRI7oP2H3NsouR~vg6nFabVJAYauqA__" />
+                <!--text-->
+                <div class="product-grid-text">
+                    <strong>3 in 1 Novage Lotion's</strong>
+                    <span>Skin Care Product</span>
+                    <a  class="dropdown-item" href="#"  onclick="showPage('product3')">Shop Now</a>
+
+                </div>
+            </div>
+    
+            <!--**box*************-->
+            <div class="product-grid-box product-grid-box3">
+                <!--img-->
+                <img src="https://media-hosting.imagekit.io//ad747a248dc54cfd/s3.jpg?Expires=1837342549&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=slPUZbnCmib6rIuSf9sjZqvwOUfzLz9GBAIvEKyzXbUSFZc2Aw0dpxZVh4rn1mu~kobYZx1BFFxDDSm3VT3V3OF9WIGfsBboshjvDI6a8sOfDqeAQnW4ZFLWUxgZps3qGYP5IlnfLezQLueSCJarialar3xLS4VbBmlytxBDAJ6gMWzMAv4DU41AHjHkcJLigdmWhCHRpJL8K1hMh-161GrxXdKQ8irafDKPlscfRaBLbhMRtAyyl3Q9G5Wu13CFHkgw2jPD7u1oFVp3mwo923ptkyK35hVWGXlEHKHC4KRxP1BDi3z4l1UY0e6euJ67topsSgmqtuN27L4JgPab0Q__" />
+                <!--text-->
+                <div class="product-grid-text">
+                    <strong>Gold FaceWash & Perfume</strong>
+                    <span>Skin Care Product</span>
+                    <a  class="dropdown-item" href="#"  onclick="showPage('product1')">Shop Now</a>
+                </div>
+            </div>
+    
+        </section>
+    
+    
+        <!--==New-Products-->
+        
+        <section id="new_products">
+    
+            <!--**heading*********************-->
+            <div class="new-p-heading">
+                <!--heading-->
+                <h3>New Product's</h3>
+                <!--filter-->
+                <ul>
+                    <li class="filter-list active" data-filter="all" >All</li>
+                    <li class="filter-list" data-filter="skin">Skin</li>
+                    <li class="filter-list" data-filter="mackup">Mackup</li>
+                    <li class="filter-list" data-filter="haircare">Haircare</li>
+                </ul>
+            </div>
+    
+            <!--**container******************-->
+            <div class="new-product-container">
+    
+                <!--**box**-->
+                <div class="new-product-box-wrapper skin">
+                <div class="new-product-box">
+                    <!--img-->
+                    <a href="#" class="new-product-img">
+                        <span>Skin</span>
+                        <img src="https://media-hosting.imagekit.io//68a9f518c3684bf8/n1.png?Expires=1837342549&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=s~fiHbmz41DS~Pit8lFQhE5Sx2C9GLzgg3JnxAaM0MDfPrMjmt8dPCsYzrlPzlMi93L1c~KalQVe61y21UItXqyqpGvDPcEqhukmTFe0pWwyWJaI0FxMK6MR2hAmI5a-uDACCmV0fl--42sjByHS11lhUoURvXq9zpLmSglVpkNQmWxBLA~23lWULQeONAOmHir-SD1UmpIMnzXD~lg0B~UoiEN9woVEzPxSlIIYzWNFGmnbGxc~mz5MzvK3yZ7vDBmmGNOxLI0OnfMEJ5~US97RGuvtkagPTu7DhVIWNqCeu4osXiDHSfDrFg08CTd1IDUf8lvxXuvzMaE5YAx9wg__" />
+                    </a>
+                    <!--text-->
+                    <div class="new-product-text">
+                        <a href="#" class="new-product-title">FaceWash </a>
+                        <span>₹200</span>
+                        <a href="#" class="new-p-cart-btn">Add To Cart</a>
+                    </div>
+                </div>
+                </div><!--end-box-->
+    
+                <!--**box**-->
+                <div class="new-product-box-wrapper skin">
+                <div class="new-product-box">
+                    <!--img-->
+                    <a href="#" class="new-product-img">
+                        <img src="https://media-hosting.imagekit.io//6246c72a074e4e0f/n2.png?Expires=1837342549&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=h9s6KSuCfLj4ejYn9~xYSwjzfYs1b8zrMt9CdhH17A4Yl~baLKwP8HDgPRuAYZJZxxaAt~OvppCoxZq7AORM2Csx2OX1F2GvYWJjINSWEVeC6Mal5vIiELsXUp0M7Ca9G9MryxYLfQnxGBMgDdx~swQ1KCPvmDSTPGf7EDW3-U6wuiiHLNC~2jYy34tvAQXgmjP3TfttUxDAMevk-cGDodql6u6dR-Omv1g2~o7IFCVhdXFSNDmxEYie1w6jk9zgks5lw3Aq9685nsWoH9dNeeIyUHcG-KtYct55zXBg4O3aijJlGuJSsGsffQa3JhDobA3AE--3BZ2EJyJw1skRkA__" />
+                        <span>Skin</span>
+                    </a>
+                    <!--text-->
+                    <div class="new-product-text">
+                        <a href="#" class="new-product-title">Element Small FaceWash</a>
+                        <span>₹150</span>
+                        <a href="#" class="new-p-cart-btn">Add To Cart</a>
+                    </div>
+                </div>
+                </div><!--end-box-->
+    
+
+                
+                <!--**box**-->
+                <div class="new-product-box-wrapper mackup">
+                    <div class="new-product-box">
+                        <!--img-->
+                        <a href="#" class="new-product-img">
+                            <span>Mackup</span>
+                            <img src="https://i.pinimg.com/236x/62/55/8c/62558c014e26f00f4eef78d23c6e9a5d.jpg" />
+                        </a>
+                        <!--text-->
+                        <div class="new-product-text">
+                            <a href="#" class="new-product-title">Volumizing mascara</a>
+                            <span>₹250</span>
+                            <a href="#" class="new-p-cart-btn">Add To Cart</a>
+                        </div>
+                    </div>
+                    </div><!--end-box-->
+
+                 <!--**box**-->
+                 <div class="new-product-box-wrapper haircare">
+                    <div class="new-product-box">
+                        <!--img-->
+                        <a href="#" class="new-product-img">
+                            <span>Haircare</span>
+                            <img src="https://m.media-amazon.com/images/I/61A6Xc39teL._AC_UL320_.jpg" />
+                        </a>
+                        <!--text-->
+                        <div class="new-product-text">
+                            <a href="#" class="new-product-title">Moroccanoil Frizz Control Conditioner</a>
+                            <span>₹399</span>
+                            <a href="#" class="new-p-cart-btn">Add To Cart</a>
+                        </div>
+                    </div>
+                    </div><!--end-box-->
+
+                    <!--**box**-->
+                    <div class="new-product-box-wrapper mackup">
+                        <div class="new-product-box">
+                            <!--img-->
+                            <a href="#" class="new-product-img">
+                                <span>Mackup</span>
+                                <img src="https://m.media-amazon.com/images/I/51ZhSkRUTWL._SX679_.jpg" />
+                            </a>
+                            <!--text-->
+                            <div class="new-product-text">
+                                <a href="#" class="new-product-title">SUGAR Cosmetics Prime Sublime Depuffing Primer </a>
+                                <span>₹175</span>
+                                <a href="#" class="new-p-cart-btn">Add To Cart</a>
+                            </div>
+                        </div>
+                        </div><!--end-box-->
+
+    
+                <!--**box**-->
+                <div class="new-product-box-wrapper haircare">
+                <div class="new-product-box">
+                    <!--img-->
+                    <a href="#" class="new-product-img">
+                        <span>Haircare</span>
+                        <img src="https://m.media-amazon.com/images/I/512rxRpMwIL._SX522_.jpg" />
+                    </a>
+                    <!--text-->
+                    <div class="new-product-text">
+                        <a href="#" class="new-product-title">Moroccanoil Hydrating Shampoo</a>
+                        <span>₹150</span>
+                        <a href="#" class="new-p-cart-btn">Add To Cart</a>
+                    </div>
+                </div>
+                </div><!--end-box-->
+    
+                <!--**box**-->
+                <div class="new-product-box-wrapper mackup">
+                <div class="new-product-box">
+                    <!--img-->
+                    <a href="product_page.html" class="new-product-img">
+                        <span>Mackup</span>
+                        <img src="https://m.media-amazon.com/images/I/71FEqyT7UqL._SX425_.jpg" />
+                    </a>
+                    <!--text-->
+                    <div class="new-product-text">
+                        <a href="product_page.html" class="new-product-title">Maybelline New York  Liquid Lipstick</a>
+                        <span>₹100</span>
+                        <a href="#" class="new-p-cart-btn">Add To Cart</a>
+                    </div>
+                </div>
+                </div><!--end-box-->
+    
+              
+    
+    
+    
+                <!--**box**-->
+                <div class="new-product-box-wrapper skin">
+                <div class="new-product-box">
+                    <!--img-->
+                    <a href="#" class="new-product-img">
+                        <span>Skin</span>
+                        <img src="https://media-hosting.imagekit.io//ced97cbef7b04194/n8.png?Expires=1837342549&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=BAKHTgUEQMfzPwPhvmLwXuPbanEl-DNiOD~WdLNx3aqaerT0OlGo8H~RQDUNHVKrWGdMk8lwxVbo9IGAG7tC5z4PjkFFzDf7w-tfBUSolNObwP~Vc9UZE~z5ew0VQDTnjD~932dFsK~CHNWwNAih8SP~8xrggZLpH6KGOJLpH1FVr9Z95MauT7GuxBBDfLimJi4qCteELriBRbARKWHKXgVrPKeB~Ik4dNUPOf0~hUMO3KfKI9CyVR0DEcljivHOndpRYQPbyeGq8fLtbp2TWgSXtqESc6Wg4jVSYn4YgnrKKHEmKXLRR8cej4bJASZL3-VwxoinsMCsx5O2oYsPaQ__" />
+                    </a>
+                    <!--text-->
+                    <div class="new-product-text">
+                        <a href="#" class="new-product-title"> FaceWash</a>
+                        <span>₹80</span>
+                        <a href="#" class="new-p-cart-btn">Add To Cart</a>
+                    </div>
+                </div>
+                </div><!--end-box-->
+    
+                <!--**box**-->
+                <div class="new-product-box-wrapper skin">
+                <div class="new-product-box">
+                    <!--img-->
+                    <a href="#" class="new-product-img">
+                        <span>Skin</span>
+                        <img src="https://media-hosting.imagekit.io//fced0fc3dfc84511/n9.png?Expires=1837342549&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=CzXkLbT-XRqWsE5zVDlaFPHQqDmkHV~jXN0iujsT3lRlXGadRSKFX0DllMKoVzwETwyIMzSJPLmjTZuqJ4AEZdgq6nPRcsuZPXn9gudCVQWmxQXGwlYy3~-MbVI3UzxMLRegS6Ztd1ezlm88PrylKXp7o--KNbxYapfo-~UKGBeWDyXJHRJj5xFJ~7Zuah2U-9gCs1w1fAXYOysjIoAugZQoU1iMhmgl9g24I3ZXjBl8pFB3-0WtbkAvLmyMb6Uhi~VHqioBKIuFV5~ts8fjLJTLctCnADW2hvhXvGa4JNJKkZY0s7LMxXvfpVMhnyKRDwEzS6oL4rQJo9G6b4KohQ__" />
+                    </a>
+                    <!--text-->
+                    <div class="new-product-text">
+                        <a href="#" class="new-product-title">Skin Car Lotion </a>
+                        <span>₹220</span>
+                        <a href="#" class="new-p-cart-btn">Add To Cart</a>
+                    </div>
+                </div>
+                </div><!--end-box-->
+    
+    
+                <!--**box**-->
+                <div class="new-product-box-wrapper mackup">
+                <div class="new-product-box">
+                    <!--img-->
+                    <a href="#" class="new-product-img">
+                        <span>Mackup</span>
+                        <img src="https://i.pinimg.com/236x/61/e1/2b/61e12b71de768f28918492969ca00f58.jpg" />
+                    </a>
+                    <!--text-->
+                    <div class="new-product-text">
+                        <a href="#" class="new-product-title">SHEGLAM Color Bloom Liquid Blush</a>
+                        <span>₹70</span>
+                        <a href="#" class="new-p-cart-btn">Add To Cart</a>
+                    </div>
+                </div>
+                </div><!--end-box-->
+
+
+                <!--**box**-->
+                <div class="new-product-box-wrapper haircare">
+                    <div class="new-product-box">
+                        <!--img-->
+                        <a href="#" class="new-product-img">
+                            <span>Haircare</span>
+                            <img src="https://m.media-amazon.com/images/I/61QLCOJdi7L._AC_UL320_.jpg" />
+                        </a>
+                        <!--text-->
+                        <div class="new-product-text">
+                            <a href="#" class="new-product-title"> Serum Argan  Hair Oil</a>
+                            <span>₹450</span>
+                            <a href="#" class="new-p-cart-btn">Add To Cart</a>
+                        </div>
+                    </div>
+                    </div><!--end-box-->
+            
+            </div><!--end-container-->
+    
+        </section>
+    
+        <!--==product-grid-1.5=======================-->
+        <section class="product-grid-half">
+    
+            <!--**box*************-->
+            <div class="product-grid-box product-grid-box2">
+                <!--img-->
+                <img src="https://media-hosting.imagekit.io//e9439cf22cf6476e/h1.jpg?Expires=1837342549&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=SUx58Hz4vElwYkuLwtqtZaWj2iCdXQ8~tAo9dVrG4crRwMkwuFdyDjk10maamxAV-iqM5JWnSWSf3qzgoRIfTrZGWxqwJZgK-powsCgSRWxz28kPheDVDyqkwN6XXofWYacMFUTmJFz8J0LJfzhe6t~u8x1JJPnbodTaexrdanToh72qZmi3hmgGMzO3pYonXyC7SIdwCVIYMNXZ4Yr~H3rFmtwFRhHN5B2jX59HfDHDa11Kq6YteiE~G0zc~GUURCYJKJ-Z6hvruSvEJckhxDCc9xLTBkTtR~8yGz8hBENdUHidh-jcaxQzzcab4QqP9p2fEJ~xZog04MXdtLd9WA__" />
+                <!--text-->
+                <div class="product-grid-text">
+                    <strong>All Type of Mackup</strong>
+                    <span>Skin Care Product</span>
+                    <a  class="dropdown-item" href="#"  onclick="showPage('product1')">Shop Now</a>
+                </div>
+            </div>
+    
+            <!--**box*************-->
+            <div class="product-grid-box product-grid-box1">
+                <!--img-->
+                <img src="https://media-hosting.imagekit.io//e6c9b408ca2a4cba/s1.jpg?Expires=1837342549&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=OKbqEdcuBa5mLNB6h5KZN0decGuHmH89xnTynhef-mZN5EI-ciRHlt8hWM-HKFjzMImDyHhJITjyJvgzq9udFLyCX7HCIt5OwfgoshxSRXaiyjDlmAevCw3D7kr4Pc8fDhUV-MStR~kUl5RChutKUpRzTLy36Hko2Kjju6K4OUoXR0PD6DKmhRuSIIULmRteGNlWN0hUqINYZMNXfuDo3eK3dszopjQ~fPe9CMr1NkYgJTK80m8PPAfceqiHYgU9HM5dW3tnCZE54ls97px9MItOKbzyXlxo2apsyiw4F4bw68TpIFBzkVQ9X9xKXWralzFRlXE1x-Qo7rT7gcrIMA__" />
+                <!--text-->
+                <div class="product-grid-text">
+                    <strong>Natural Lotion</strong>
+                    <span>Skin Care Product</span>
+                    <a  class="dropdown-item" href="#"  onclick="showPage('product4')">Shop Now</a>
+                </div>
+            </div>
+    
+            <!--**box*************-->
+            <div class="product-grid-box product-grid-box3">
+                <!--img-->
+                <img src="https://media-hosting.imagekit.io//ad747a248dc54cfd/s3.jpg?Expires=1837342549&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=slPUZbnCmib6rIuSf9sjZqvwOUfzLz9GBAIvEKyzXbUSFZc2Aw0dpxZVh4rn1mu~kobYZx1BFFxDDSm3VT3V3OF9WIGfsBboshjvDI6a8sOfDqeAQnW4ZFLWUxgZps3qGYP5IlnfLezQLueSCJarialar3xLS4VbBmlytxBDAJ6gMWzMAv4DU41AHjHkcJLigdmWhCHRpJL8K1hMh-161GrxXdKQ8irafDKPlscfRaBLbhMRtAyyl3Q9G5Wu13CFHkgw2jPD7u1oFVp3mwo923ptkyK35hVWGXlEHKHC4KRxP1BDi3z4l1UY0e6euJ67topsSgmqtuN27L4JgPab0Q__" />
+                <!--text-->
+                <div class="product-grid-text">
+                    <strong>Gold Natural Lotion</strong>
+                    <span>Skin Care Product</span>
+                    <a  class="dropdown-item" href="#"  onclick="showPage('product3')">Shop Now</a>
+
+                </div>
+            </div>
+    
+        </section>
+    
+    
+    
+       
+       
+    
+    
+        <!--==Partnre-logo================================-->
+        <section id="partner">
+    
+            <!--**heading****************-->
+            <div class="partner-heading">
+                <h3>Our Trusted Partner</h3>
+            </div>
+    
+        </section>
+        <!--**logo-section-end**-->
+    
+        <!--==product-grid-2=======================-->
+        <section class="product-grid-2">
+    
+            <!--**box*************-->
+            <div class="product-grid-box product-grid-box3">
+                <!--img-->
+                <img src="https://media-hosting.imagekit.io//730768971b664f18/g1.jpg?Expires=1837342549&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=yXAL9KAnZ7RMyFo7YEVh~g59HNrrSOx76gv7nhTkmnmIG2Yz017s0zZ-HSwzrRBkEXzBh5SOQ1JC9Yj6qioF1rZJjkbNBW8i9oU7pl5yLWCsnbjI~B2O75BTz9YRzW8mCe86eIMpLU2LvnjqURs9Eb3s4OLxK7vUmeQb8NNFsaogcVN1~uikVrPe4C4sa0lLVa~mwHvqF5cL4g-In6qlAK-m6ZbDla4vZMBLlHwiLYk5rp8f29YzfL2mu2wxQQMUYKLC898gCJkMacyhdIAR~~vnYv74ZplnzeFySEqMI31HE3-43DvrtIt~Pjn8ohW0G5zGV7XxkLy04SbsgNT12g__" />
+                <!--text-->
+                <div class="product-grid-text">
+                    <strong>Mackup Collection</strong>
+                    <span>Skin Care Product</span>
+                    <a href="">Shop Now</a>
+                </div>
+            </div>
+    
+            <!--**box*************-->
+            <div class="product-grid-box product-grid-box2">
+                <!--img-->
+                <img src="https://media-hosting.imagekit.io//f03a46f593464628/g2.jpg?Expires=1837342549&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=y8bIgnEoE26jaxQko-aJsPcxMYKs53oW0T~h1AAFRoYXFEcLWnhBMmhF3O5ufGI4PC-F0nb9WLRnTJNyOIDvlzH9SXjhqM-LXv3iZQtKlzOTlmDVuR40SvPzaCR6PZTwJgDVnuRA5KG9qVBQjndQDsXQx1pnj153mQCBFptQcleoevlggHppbxF5QF51~XVOqMV6qj1yjlyEKOnyOVMEo0~neX8REQLVP497hea2p1QhugK1kdXWMoiA6vjFpG3v~D6E2KBiVInTaClcJyrOhYW1uG~jAn1M7GXq9NtspsTcKF6d-PVP~KYJ7I9AvPNOmCnTr0ehfm8ptE31b4dA8Q__" />
+                <!--text-->
+                <div class="product-grid-text">
+                    <strong>Discounted Product's</strong>
+                    <span>Skin Care Product</span>
+                    <a href="">Shop Now</a>
+                </div>
+            </div>
+    
+        </section>
+           
+    </div>
+
+        <!-- /////////////////////////////////// -->
+
+        <div id="about" class="content">
+        
+<!-- Hero Section -->
+<div class="hero">
+    <h1>About Velver</h1>
+    <p class="lead">Luxury, Elegance, and Modern Sophistication</p>
+</div>
+
+<!-- About Section -->
+<div class="container about-section">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+            <h2 class="highlight">Who We Are</h2>
+            <p>Velver is a premium brand inspired by elegance and innovation. Our mission is to redefine luxury through high-end fashion, beauty, and lifestyle products that reflect sophistication and timeless appeal.</p>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="https://media-hosting.imagekit.io//28940cc950884fc8/abd8ed294aad391f2b11b5825b61c624-removebg-preview.png?Expires=1837226958&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=FcQDNMmxqWTSigtok3aqR-61ulWQRPhtLxIeUEwXGaBi9CWR0NpQyutBWIyaIVAeS237IDkwr-AtYw~C-c~q1QMP0yBtBKajf9O7HUW2MUop4RWIMofohIT77Po4YqpKoQI0cT8DYtMC9cuxZRCc7wpJo~vRk2KBiMX9NmlOeoh8CbSoC9l4tQT692I5kZwG55~gzlCr9ZoVDRQZiw2XC8vQvZkHgeD4jrmzWA519V4~5a1qGg4-I1gemk7m883qTMM~C-cdvFk6GBeOdHtII53EdVL6S0QhylPjHr3QXnSOpIlqqrKhpid8kqcHxxN2o48qXGU5sXaqO0oenKo52w__" class="img-fluid rounded" alt="Velver Brand Image">
+        </div>
+    </div>
+</div>
+
+<!-- Stats Section -->
+<div class="container mt-3">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="stats-box">
+                <h3 class="highlight" id="customers">20,123</h3>
+                <p>Happy Customers</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stats-box">
+                <h3 class="highlight" id="established">1,400</h3>
+                <p>Established Since</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stats-box">
+                <h3 class="highlight" id="orders">13,560</h3>
+                <p>Orders Delivered</p>
+            </div>
+        </div>
+    </div>
+</div>
+            
+        </div>
+
+  
+
+       <!-- Product 1 Page -->
+    <div id="product1" class="container mt-4 content">
+        <h2>Skin Care</h2>
+        <div class="row">
+            <!-- Product 1 Items -->
+            <div class="row" id="product1-list"></div>
+        </div>
+        <button class="btn btn-secondary mt-3" onclick="showPage('home')">Back to Home</button>
+    </div>
+
+    <!-- Product 2 Page -->
+    <div id="product2" class="container mt-4 content">
+        <h2>Nail</h2>
+        <div class="row">
+            <!-- Product 2 Items -->
+            <div class="row" id="product2-list"></div>
+        </div>
+        <button class="btn btn-secondary mt-3" onclick="showPage('home')">Back to Home</button>
+    </div>
+
+        
+    <!-- Product 3 Page -->
+    <div id="product3" class="container mt-4 content">
+        <h2>Fragrance</h2>
+        <div class="row">
+            <!-- Product 4 Items -->
+            <div class="row" id="product3-list"></div>
+        </div>
+        <button class="btn btn-secondary mt-3" onclick="showPage('home')">Back to Home</button>
+    </div>
+
+     <!-- Product 4 Page -->
+     <div id="product4" class="container mt-4 content">
+        <h2>Hair Care</h2>
+        <div class="row">
+            <!-- Product 3 Items -->
+            <div class="row" id="product4-list"></div>
+        </div>
+        <button class="btn btn-secondary mt-3" onclick="showPage('home')">Back to Home</button>
+    </div>
+
+<!-- cart -->
+<div id="cart" class="cart-container" style="display: none;">
+    <h2>Your Cart</h2>
+    <div class="cart-header">
+        <span>Image</span>
+        <span>Name</span>
+        <span>Price</span>
+        <span>Quantity</span>
+        <span>Remove</span>
+    </div>
+    <div id="cart-list"></div>
+    <div id="cart-total"></div>
+    <button class="btn btn-success" onclick="goToCheckout()">Proceed to Checkout</button>
+</div>
+
+<!-- checkout -->
+ <!-- Checkout Section -->
+    <div id="checkout" class="content container mt-5">
+        <h2 class="text-center mb-4">Checkout</h2>
+
+        <div class="row">
+            <!-- User Details Form -->
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h4>Billing Details</h4>
+                    <form id="checkout-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name:</label>
+                            <input type="text" class="form-control border-dark" id="name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number:</label>
+                            <input type="text" class="form-control border-dark" id="phone" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address:</label>
+                            <textarea class="form-control border-dark" id="address" rows="3" required></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="payment-method" class="form-label">Payment Method:</label>
+                            <select class="form-select" id="payment-method" onchange="toggleCardFields()">
+                                <option value="cod">Cash on Delivery</option>
+                                <option value="card">Credit/Debit Card</option>
+                            </select>
+                        </div>
+
+                        <div id="card-details" style="display: none;">
+                            <div class="mb-3">
+                                <label for="card-number" class="form-label">Card Number:</label>
+                                <input type="text" class="form-control border-dark" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="expiry-date" class="form-label">Expiry Date:</label>
+                                <input type="text" class="form-control border-dark" id="expiry-date" placeholder="MM/YY">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="cvv" class="form-label">CVV:</label>
+                                <input type="text" class="form-control border-dark" id="cvv" placeholder="123">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">Place Order</button>
+                        <button class="btn btn-secondary w-100 mt-2" onclick="showPage('cart')">Back to Cart</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h4>Order Summary</h4>
+                    <div id="order-summary"></div>
+                    <h3 id="total-amount" class="mt-3"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <!-- Thank You Section (Initially Hidden) -->
+<div id="thank-you" class="content container mt-5" style="display: none; text-align: center;">
+    <h2>Thank You for Your Order!</h2>
+    <p>Your order has been placed successfully.</p>
+    <a href="#" class="btn btn-primary" onclick="showPage('home')">Return to Home</a>
+</div>
+
+
+
+
+
+        <footer>
+            <div class="footer-container">
+                <!--**comoany-box**-->
+                <div class="footer-company-box">
+                    <!--logo-->
+                    <a href="#" class="footer-logo">Velvera</a>
+                    <!--details-->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quas neque repudiandae nihil.</p>
+                    <!--social-box-->
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!--**link-box***-->
+                <div class="footer-link-box">
+                    <strong>Main Link's</strong>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                    </ul>
+                </div>
+                <!--**link-box***-->
+                <div class="footer-link-box">
+                    <strong>External Link's</strong>
+                    <ul>
+                        <li><a href="#">Our Product's</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Trem's and Condition's</a></li>
+                    </ul>
+                </div>
+                <!--**link-box***-->
+                <div class="footer-link-box">
+                    <strong>Our Product's</strong>
+                    <ul>
+                        <li><a href="#">Skin Care</a></li>
+                        <li><a href="#">Hair Care</a></li>
+                        <li><a href="#">Nail's Polish</a></li>
+                        <li><a href="#">Eye Liner's</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+            <!--**bottom**********************-->
+            <div class="footer-bottom">
+                <span class="footer-owner">Made By Going-To Internet</span>
+                <span class="copyright">&#169; Copyright 2022 -  Going-To Internet</span>
+            </div>
+        </footer>
+    
+     
+         <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 15px;">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white">Login</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-white">Have an account? Sign in below:</p>
+                    <form action="index.php" method="POST">
+                        <input type="text" name="username" class="form-control mb-3 bg-transparent text-white border-white" placeholder="Username" required>
+                        <input type="password" name="password" class="form-control mb-3 bg-transparent text-white border-white" placeholder="Password" required>
+                        <button type="submit" name="login" class="btn btn-light w-100">SIGN IN</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p class="text-white">Don't have an account? 
+                            <a href="#" class="text-white text-decoration-none" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border-radius: 15px;">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white">Register</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-white">Create a new account</p>
+                    <form action="index.php" method="POST">
+                        <input type="text" name="full_name" class="form-control mb-3 bg-transparent text-white border-white" placeholder="Full Name" required>
+                        <input type="email" name="email" class="form-control mb-3 bg-transparent text-white border-white" placeholder="Email" required>
+                        <input type="text" name="username" class="form-control mb-3 bg-transparent text-white border-white" placeholder="Username" required>
+                        <input type="password" name="password" class="form-control mb-3 bg-transparent text-white border-white" placeholder="Password" required>
+                        <button type="submit" name="register" class="btn btn-light w-100">REGISTER</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+       
+       
+
+
+    
+    <!--==Jquery==========================-->
+   
+    
+    <script>
+    
+ // Show login modal after successful registration
+ const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('registered')) {
+        var loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+        loginModal.show();
+    }
+ 
+
+
+const filterButtons = document.querySelectorAll('.filter-list');
+const productEvent = document.querySelectorAll('.new-product-box-wrapper');
+
+// Function to filter products based on category
+function filterProduct(category) {
+    productEvent.forEach(item => {
+        if (category === 'all' || item.classList.contains(category)) {
+            item.style.display = 'block'; // Show matching products
+        } else {
+            item.style.display = 'none'; // Hide non-matching products
+        }
+    });
+
+    // Remove "active" class from all buttons
+    filterButtons.forEach(button => button.classList.remove('active'));
+
+    // Add "active" class to the clicked button
+    event.currentTarget.classList.add('active');
+}
+
+// Attach click event to each filter button
+filterButtons.forEach(button => {
+    button.addEventListener('click', function (event) {
+        const category = this.getAttribute('data-filter'); // Get filter category
+        filterProduct(category);
+    });
+});
+
+// Show all products on page load
+document.addEventListener('DOMContentLoaded', () => {
+    filterProduct('all');
+});
+
+
+
+function showPage(page) {
+    document.querySelectorAll('.content').forEach(section => section.style.display = 'none');
+    document.getElementById(page).style.display = 'block';
+}
+
+
+       
+
+    
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        
+function saveCart() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function showPage(page) {
+    document.querySelectorAll('.content, #home').forEach(section => section.style.display = 'none');
+    document.getElementById(page).style.display = 'block';
+    if (page === 'cart') {
+        displayCart();
+    }
+}
+
+document.getElementById('home').style.display = 'block';
+
+function generateProducts(containerId, products) {
+    const container = document.getElementById(containerId);
+
+    if (!container) {
+        console.error(`Element with ID "${containerId}" not found.`);
+        return;
+    }
+
+    container.innerHTML = ""; // Clear previous content
+
+    products.forEach(product => {
+        const productDiv = document.createElement("div");
+        productDiv.classList.add("col-md-3", "col-sm-6", "mb-4");
+
+        productDiv.innerHTML = `
+            <div class="product-box">
+                <img src="${product.image}" alt="${product.name}">
+                <h5>${product.name}</h5>
+                <p>${product.price}</p>
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+        `;
+
+        // Attach event listener properly
+        const button = productDiv.querySelector(".add-to-cart");
+        button.addEventListener("click", () => addToCart(product));
+
+        container.appendChild(productDiv);
+    });
+}
+
+
+
+function addToCart(product) {
+    const existingProduct = cart.find(item => item.name === product.name);
+    if (existingProduct) {
+        existingProduct.quantity += 1;
+    } else {
+        cart.push({ ...product, quantity: 1 });
+    }
+    saveCart();
+    updateCartIcon();
+    alert(`${product.name} added to cart!`);
+}
+
+
+function displayCart() {
+    const cartContainer = document.getElementById('cart-list');
+    cartContainer.innerHTML = "";
+    let grandTotal = 0;
+
+    cart.forEach((item, index) => {
+        let itemPrice = parseInt(item.price.replace("₹", ""));
+        let itemTotal = itemPrice * item.quantity;
+        grandTotal += itemTotal;
+
+        const cartItem = document.createElement("div");
+        cartItem.classList.add("cart-item");
+        cartItem.innerHTML = `
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <img src="${item.image}" alt="${item.name}" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <h5>${item.name}</h5>
+                </div>
+                <div class="col-md-2">
+                    <p>₹${itemPrice}</p>
+                </div>
+                <div class="col-md-2">
+                    <p>Qty: ${item.quantity}</p>
+                </div>
+                <div class="col-md-2">
+                    <p><strong>Subtotal: ₹${itemTotal}</strong></p>
+                </div>
+                <div class="col-md-1">
+                    <button class="btn btn-danger" onclick='removeFromCart(${index})'>Remove</button>
+                </div>
+            </div>
+        `;
+        cartContainer.appendChild(cartItem);
+    });
+
+    // Display Grand Total
+    const totalContainer = document.getElementById('cart-total');
+    totalContainer.innerHTML = `<h4>Grand Total: ₹${grandTotal}</h4>`;
+}
+
+function removeFromCart(index) {
+    cart.splice(index, 1);
+    saveCart();
+    updateCartIcon();
+    displayCart();
+}
+
+function updateCartIcon() {
+    const cartIcon = document.getElementById('cart-icon');
+    cartIcon.innerText = cart.length;
+}
+
+// Function to toggle Cart Page
+function toggleCart(event) {
+            event.preventDefault(); // Prevent page reload
+            showPage('cart'); // Show cart section and hide others
+        }
+
+// Navigate to Checkout Page
+function goToCheckout() {
+            showPage('checkout'); // Show checkout section
+        }
+
+
+
+
+
+
+
+function displayOrderSummary() {
+    const orderSummary = document.getElementById("order-summary");
+    const totalAmount = document.getElementById("total-amount");
+
+    orderSummary.innerHTML = ""; // Clear previous content
+    let totalPrice = 0;
+
+    cart.forEach(item => {
+        let price = parseInt(item.price.replace("₹", "")) * item.quantity;
+        totalPrice += price;
+
+        const itemDiv = document.createElement("div");
+        itemDiv.innerHTML = `
+            <p><strong>${item.name}</strong> (x${item.quantity}) - ₹${price}</p>
+        `;
+        orderSummary.appendChild(itemDiv);
+    });
+
+    totalAmount.innerHTML = `Total: ₹${totalPrice}`;
+}
+
+// Show/Hide Card Payment Fields
+function toggleCardFields() {
+    const paymentMethod = document.getElementById("payment-method").value;
+    document.getElementById("card-details").style.display = paymentMethod === "card" ? "block" : "none";
+}
+
+// Handle Checkout Submission
+document.getElementById("checkout-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    
+
+    // Collect user details
+    const orderDetails = {
+        name: document.getElementById("name").value,
+        phone: document.getElementById("phone").value,
+        address: document.getElementById("address").value,
+        payment_method: document.getElementById("payment-method").value,
+        card_number: document.getElementById("card-number").value,
+        expiry_date: document.getElementById("expiry-date").value,
+        cvv: document.getElementById("cvv").value,
+        cart: cart
+    };
+
+    // Validate fields
+    if (!orderDetails.name || !orderDetails.phone || !orderDetails.address) {
+        alert("Please fill in all required fields.");
+        return;
+    }
+    if (orderDetails.payment_method === "card" && (!orderDetails.card_number || !orderDetails.expiry_date || !orderDetails.cvv)) {
+        alert("Please fill in all card details.");
+        return;
+    }
+
+    // Send Order Data to PHP
+    fetch("process_order.php", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(orderDetails)
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert("Order Placed Successfully!");
+            localStorage.removeItem("cart"); // Clear cart
+            showPage('thank-you');  // Redirect to Thank You page
+        } else {
+            alert("Error placing order. Try again.");
+        }
+    })
+    .catch(error => console.error("Error:", error));
+});
+
+
+// Display cart on checkout page load
+displayOrderSummary();
+
+
+        
+
+        // Product lists (Product 1 & Product 2 now have same layout)
+        const product1List = [
+                    {name: "FaceWash ", price: "₹169", image: "https://i.pinimg.com/474x/8f/a2/ba/8fa2ba39f420976c11ea36ce9d875b6a.jpg"},
+                    {name: "Element  FaceWash", price: "₹209", "image": "https://i.pinimg.com/474x/79/8c/c0/798cc018dcf9ed2b18a669f5fbbe19aa.jpg"},
+                    {name: "Moisturizer", price: "₹259", image: "https://i.pinimg.com/474x/47/2c/64/472c64e6d96e1cefc2e4f8bc0f99b8aa.jpg"},
+                    {name: " Hydrating FaceWash", price: "₹299", image: "https://i.pinimg.com/736x/ce/b1/dd/ceb1dd66abd73b4fbc95e8e3f4f43357.jpg"},
+                    {name: "Vitamin C serum", price: "₹459", image: "https://i.pinimg.com/736x/b6/82/2c/b6822c8443aa063425217c796676177a.jpg"},
+                    {name: "Sunscreen", price: "₹599", image: "https://i.pinimg.com/736x/32/f0/86/32f0860edc8f89b5d36b31a819848de7.jpg"},
+                    {name: "RiceToner", price: "₹199", image: "https://i.pinimg.com/474x/64/35/98/6435983e8123a7287445db3b00c6809f.jpg"},
+                    {name: "Heartleaf Cleanser", price: "₹549", image: "https://i.pinimg.com/474x/3a/d4/2c/3ad42ce46f8c48676281e2a033832494.jpg"},
+                    {name: "Centella Cleanser", price: "₹279", image: "https://i.pinimg.com/474x/cf/94/6f/cf946f151b06749e7f138fe1e7cf5d4b.jpg"},
+                    {name: "Joseon Serum", price: "₹229", image: "https://i.pinimg.com/736x/d5/b2/16/d5b2166c4cdb44de9a566141fed4c325.jpg"},
+
+                ]
+
+        const product2List = [
+                    {name: "Blue Fake Nails ", price: "₹299", image: "https://i.pinimg.com/474x/51/32/ad/5132ad5963a2eda2087e50c26a34a3ef.jpg"},
+                    {name: "Shiny Red Nail Polish", price: "₹99", image: "https://i.pinimg.com/474x/a5/32/7d/a5327dee60a6bb3d874038543d92a0d0.jpg"},
+                    {name: "Mehndi Cones", price: "₹49", image: "https://i.pinimg.com/736x/d4/60/1e/d4601e3283ce2fce1d2f2770811d6086.jpg"},
+                    {name: "Cuticle Oil ", price: "₹399", image: "https://i.pinimg.com/736x/66/35/08/663508d894dd6f3a0bca24f5e3f3035b.jpg"},
+                    {name: "Dry Gloss Manicure", price: "₹499", image: "https://i.pinimg.com/736x/70/02/11/7002110d323efecf98c27810c3f34b68.jpg"},
+                    {name: "Nail Cuter", price: "₹49", image: "https://i.pinimg.com/736x/e3/2d/52/e32d527c4d5ee21f68370d5d43163848.jpg"},
+                    {name: "Mehndi injection pen", price: "₹149", image: "https://i.pinimg.com/736x/c2/ff/c2/c2ffc2208c6ddc7ca6198cacbf5fe429.jpg"},
+                    {name: "Nail Serum ", price: "₹299", image: "https://i.pinimg.com/474x/b4/c4/11/b4c411714a855832a323c48337ebcfb7.jpg"},
+                    {name: "Gliter Nail Polish", price: "₹99", image: "https://i.pinimg.com/474x/04/c5/a2/04c5a284c36490074ee5f3176cc03f9e.jpg"},
+                    {name: "Nail Art", price: "₹49", image: "https://i.pinimg.com/474x/95/d0/07/95d007616b8aa4323ed190ac1443dd4a.jpg"}
+                    
+        ];
+
+        const product3List = [
+                    {name: "Irresistible", price: "₹999", image: "https://i.pinimg.com/736x/0b/cd/9a/0bcd9a39650ee7d4e362439f7f9d39e9.jpg"},
+                    {name: " Mockup", price: "₹799", image: "https://i.pinimg.com/736x/85/98/94/8598944870f25999f89ac41efa5b7bda.jpg"},
+                    {name: " Faloett", price: "₹359", image: "https://i.pinimg.com/736x/1b/df/18/1bdf1865fa24ffd599e3933e33d8c1c0.jpg"},
+                    {name: "St.Rose", price: "₹999", image: "https://i.pinimg.com/736x/6f/48/94/6f48941798ac052ac8411434f5a01e48.jpg"},
+                    {name: "Cedrus", price: "₹499", image: "https://i.pinimg.com/736x/35/5f/91/355f91baf44e69b2d441beae5b9fa587.jpg"},
+                    {name: "La Force", price: "₹459", image: "https://i.pinimg.com/736x/2b/72/bc/2b72bc4bab6fe4877a204fa8a3de9f78.jpg"},
+                    {name: "Grand Soir", price: "₹659", image: "https://i.pinimg.com/736x/64/05/1e/64051e63f6b8831c3d213f273c2c43f3.jpg"},
+                    {name: "Maison Francis", price: "₹999", image:"https://i.pinimg.com/736x/c6/e0/77/c6e0774b50ed29817e1127c2100be370.jpg"},
+                    {name: "Oud Attar", price: "₹399", image: "https://i.pinimg.com/736x/d9/18/1a/d9181a18809dc5ac778029973d94079e.jpg"},
+                    {name: "You Absolutely", price: "₹459", image: "https://i.pinimg.com/736x/0a/22/0d/0a220d5da6e602f04e6c037aed2ff22c.jpg"}
+        ];
+
+const product4List = [
+    { name: "Shampoo", price: "₹299", image: "https://i.pinimg.com/474x/11/21/e7/1121e70c77b412124e8e3e4adb68b70f.jpg" },
+    { name: "Conditioner", price: "₹279", image: "https://i.pinimg.com/474x/3a/6b/23/3a6b2306c9135f1a4213409f61e4a760.jpg" },
+    { name: "Serum", price: "₹549", image: "https://i.pinimg.com/474x/7d/dd/73/7ddd738fdf832c40a3c2066d196503d0.jpg" },
+    { name: "Reparative Shampoo", price: "₹399", image: "https://i.pinimg.com/736x/ad/68/40/ad6840ebf5f790f63a92258eb1685fbb.jpg" },
+    { name: "Conditioner", price: "₹279", image: "https://i.pinimg.com/474x/68/a9/9d/68a99d0210771d8b461b3b617afd0470.jpg" },
+    { name: "Guava Spray", price: "₹549", image: "https://i.pinimg.com/736x/fb/c5/f3/fbc5f3e9ed51debfd94c9fb3d60a2c60.jpg" },
+    { name: "Streax Serum", price: "₹149", image: "https://i.pinimg.com/736x/4a/20/22/4a202284973e502768c37241962809a1.jpg" },
+    { name: "L'Oreal Repair Oil", price: "₹299", image: "https://i.pinimg.com/474x/11/21/e7/1121e70c77b412124e8e3e4adb68b70f.jpg" },
+    { name: "Conditioner", price: "₹379", image: "https://i.pinimg.com/474x/f8/7d/9d/f87d9d6416882defd8f10c949652a3e4.jpg" },
+    { name: "Coconut Milk Shampoo", price: "₹549", image: "https://i.pinimg.com/474x/e9/9b/c1/e99bc1f14b0605ca81d172e023db7c33.jpg" }
+];
+
+const product5List = [
+    { name: "Aloe Vera Lotion", price: "₹299", image: "https://i.pinimg.com/474x/1a/2b/3c/1a2b3c4d5e6f7g8h9i.jpg" },
+    { name: "Tea Tree Lotion", price: "₹349", image: "https://i.pinimg.com/474x/2b/3c/4d/2b3c4d5e6f7g8h9i.jpg" },
+    { name: "Cucumber Hydrating Lotion", price: "₹279", image: "https://i.pinimg.com/474x/3c/4d/5e/3c4d5e6f7g8h9i.jpg" },
+    { name: "Neem & Tulsi Lotion", price: "₹399", image: "https://i.pinimg.com/474x/4d/5e/6f/4d5e6f7g8h9i.jpg" },
+    { name: "Avocado Moisturizing Lotion", price: "₹459", image: "https://i.pinimg.com/474x/5e/6f/7g/5e6f7g8h9i.jpg" },
+    { name: "Green Tea Body Lotion", price: "₹499", image: "https://i.pinimg.com/474x/6f/7g/8h/6f7g8h9i.jpg" },
+    { name: "Shea Butter & Aloe Lotion", price: "₹549", image: "https://i.pinimg.com/474x/7g/8h/9i/7g8h9i.jpg" },
+    { name: "Coconut & Lime Lotion", price: "₹299", image: "https://i.pinimg.com/474x/8h/9i/1a/8h9i1a.jpg" },
+    { name: "Herbal Glow Lotion", price: "₹379", image: "https://i.pinimg.com/474x/9i/1a/2b/9i1a2b.jpg" },
+    { name: "Organic Honey Lotion", price: "₹549", image: "https://i.pinimg.com/474x/1a/2b/3c/1a2b3c.jpg" }
+]
+
+
+
+
+        // Generate products on page load
+        generateProducts("product1-list", product1List);
+        generateProducts("product2-list", product2List);
+        generateProducts("product3-list", product3List);
+        generateProducts("product4-list", product4List);
+        generateProducts("product5-Lis",  product5List);
+
+
+        
+
+        
+document.addEventListener("DOMContentLoaded", function () {
+    const loginButton = document.querySelector("#loginButton");
+    const registerButton = document.querySelector("#registerButton");
+
+    if (loginButton) {
+        loginButton.addEventListener("click", function () {
+            const username = document.querySelector("#loginUsername").value;
+            const password = document.querySelector("#loginPassword").value;
+
+            fetch("http://localhost/wadproject/index.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: `username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`,
+            })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                    if (data.status === "success") {
+                        sessionStorage.setItem("loggedIn", "true"); // Store login state
+                        window.location.href = "index.html"; // Redirect after login
+                    }
+                });
+        });
+    }
+
+    if (registerButton) {
+        registerButton.addEventListener("click", function () {
+            const fullName = document.querySelector("#registerFullName").value;
+            const email = document.querySelector("#registerEmail").value;
+            const username = document.querySelector("#registerUsername").value;
+            const password = document.querySelector("#registerPassword").value;
+
+            fetch("http://localhost/wadproject/index.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: `full_name=${encodeURIComponent(fullName)}&email=${encodeURIComponent(email)}&username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`,
+            })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                });
+        });
+    }
+});
+
+
+</script>
+    
+    </body>
+    </html>
+    
+       
